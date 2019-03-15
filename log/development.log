@@ -112,3 +112,234 @@ Processing by PostsController#new as HTML
   Parameters: {"post"=>{"action"=>"create", "authenticity_token"=>"wM0kUAuTuVVs64yO9C+2FgVExLWEkXYBL4fHjMvdHb/wXQBnEIZ1bXK7fKn5neP40gN03qULwt9kcGv5dkFKWg==", "commit"=>"Submit Post", "controller"=>"posts", "description"=>"asdf", "title"=>"Rails Introduction Quiz", "utf8"=>"✓"}}
   Rendered posts/new.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2019-03-15 10:36:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/students"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.10) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/rt/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+  /Users/rt/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+  /Users/rt/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+
+
+  Rendered /Users/rt/.rvm/gems/ruby-2.6.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/rt/.rvm/gems/ruby-2.6.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /Users/rt/.rvm/gems/ruby-2.6.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.1ms)
+  Rendered /Users/rt/.rvm/gems/ruby-2.6.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.3ms)
+  Rendered /Users/rt/.rvm/gems/ruby-2.6.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.5ms)
+
+
+Started GET "/" for ::1 at 2019-03-15 10:37:13 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/rt/.rvm/gems/ruby-2.6.1/gems/railties-4.2.10/lib/rails/templates/rails/welcome/index.html.erb (0.6ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-03-15 10:39:56 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 277ms (Views: 275.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-03-15 10:39:56 -0400
+
+
+Started GET "/posts" for ::1 at 2019-03-15 10:43:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 165ms (Views: 157.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-03-15 10:43:27 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=wow&post%5Bdescription%5D=wow%21" for ::1 at 2019-03-15 10:43:33 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"wow", "description"=>"wow!"}}
+  Rendered posts/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=&post%5Bdescription%5D=" for ::1 at 2019-03-15 10:43:35 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"", "description"=>""}}
+  Rendered posts/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=&post%5Bdescription%5D=" for ::1 at 2019-03-15 10:43:36 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"", "description"=>""}}
+  Rendered posts/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=&post%5Bdescription%5D=" for ::1 at 2019-03-15 10:45:55 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"", "description"=>""}}
+  Rendered posts/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 164ms (Views: 158.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-03-15 10:46:00 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=qweqiowu&post%5Bdescription%5D=oiuqwdoqiwuds" for ::1 at 2019-03-15 10:46:05 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"qweqiowu", "description"=>"oiuqwdoqiwuds"}}
+  Rendered posts/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=qweqiowu&post%5Bdescription%5D=oiuqwdoqiwuds" for ::1 at 2019-03-15 10:47:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"qweqiowu", "description"=>"oiuqwdoqiwuds"}}
+  Rendered posts/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 159ms (Views: 154.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-03-15 10:48:02 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=dfafhjv&post%5Bdescription%5D=asdjhk" for ::1 at 2019-03-15 10:48:06 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"dfafhjv", "description"=>"asdjhk"}}
+  Rendered posts/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=dfafhjv&post%5Bdescription%5D=asdjhk" for ::1 at 2019-03-15 10:50:09 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"dfafhjv", "description"=>"asdjhk"}}
+  Rendered posts/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=dfafhjv&post%5Bdescription%5D=asdjhk" for ::1 at 2019-03-15 10:50:10 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"dfafhjv", "description"=>"asdjhk"}}
+  Rendered posts/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=dfafhjv&post%5Bdescription%5D=asdjhk" for ::1 at 2019-03-15 10:50:10 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"dfafhjv", "description"=>"asdjhk"}}
+  Rendered posts/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=dfafhjv&post%5Bdescription%5D=asdjhk" for ::1 at 2019-03-15 10:50:10 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"dfafhjv", "description"=>"asdjhk"}}
+  Rendered posts/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-03-15 10:50:14 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-03-15 10:50:14 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.2ms)
+  [1m[36mPost Load (1.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+
+
+Started GET "/posts" for ::1 at 2019-03-15 10:53:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 162ms (Views: 154.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=make&post%5Bdescription%5D=new&authenticity_token=sQRWsWKkxQ9sr1JycsAcOkaiZtJ6YVHJjTHN43nMznw5iA86VoEwyTv81ISPvi032ul6Bx4nVio2SV6ebeLrOA%3D%3D" for ::1 at 2019-03-15 10:53:41 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"make", "description"=>"new"}, "authenticity_token"=>"sQRWsWKkxQ9sr1JycsAcOkaiZtJ6YVHJjTHN43nMznw5iA86VoEwyTv81ISPvi032ul6Bx4nVio2SV6ebeLrOA=="}
+  Rendered posts/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2019-03-15 10:53:54 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-03-15 10:54:28 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 166ms (Views: 160.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=wow&post%5Bdescription%5D=wowowow&authenticity_token=a99zpSP1f0d%2Bkx6vq5W%2FnSLlE24IX%2FNHM9Ruw3IfnQDjUyouF9CKgSnAmFlW646Qvq4Pu2wZ9KSIrP2%2BZjG4RA%3D%3D" for ::1 at 2019-03-15 10:54:34 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"wow", "description"=>"wowowow"}, "authenticity_token"=>"a99zpSP1f0d+kx6vq5W/nSLlE24IX/NHM9Ruw3IfnQDjUyouF9CKgSnAmFlW646Qvq4Pu2wZ9KSIrP2+ZjG4RA=="}
+  Rendered posts/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=wow&post%5Bdescription%5D=wowowow&authenticity_token=a99zpSP1f0d%2Bkx6vq5W%2FnSLlE24IX%2FNHM9Ruw3IfnQDjUyouF9CKgSnAmFlW646Qvq4Pu2wZ9KSIrP2%2BZjG4RA%3D%3D" for ::1 at 2019-03-15 10:55:14 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"wow", "description"=>"wowowow"}, "authenticity_token"=>"a99zpSP1f0d+kx6vq5W/nSLlE24IX/NHM9Ruw3IfnQDjUyouF9CKgSnAmFlW646Qvq4Pu2wZ9KSIrP2+ZjG4RA=="}
+  Rendered posts/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 165ms (Views: 159.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=wwoow+wow&post%5Bdescription%5D=wowowowowowow&authenticity_token=3nhArZsZtjDpDdhAo4g9ycib6oX7a8pBSnuC4WXg0fxW9BkmrzxD9r5eXrZe9gzEVND2UJ8tzaLxAxGccc70uA%3D%3D" for ::1 at 2019-03-15 10:55:21 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"wwoow wow", "description"=>"wowowowowowow"}, "authenticity_token"=>"3nhArZsZtjDpDdhAo4g9ycib6oX7a8pBSnuC4WXg0fxW9BkmrzxD9r5eXrZe9gzEVND2UJ8tzaLxAxGccc70uA=="}
+  Rendered posts/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=sjsjsj&post%5Bdescription%5D=sdlkjd&authenticity_token=ISjbE%2FzL8Ue7DLOMmrrxJr3%2FgZG1ZHE%2Ffeg2rvLaOzWppIKYyO4EgexfNXpnxMArIbSdRNEidtzGkKXT5vQecQ%3D%3D" for ::1 at 2019-03-15 10:56:58 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"sjsjsj", "description"=>"sdlkjd"}, "authenticity_token"=>"ISjbE/zL8Ue7DLOMmrrxJr3/gZG1ZHE/feg2rvLaOzWppIKYyO4EgexfNXpnxMArIbSdRNEidtzGkKXT5vQecQ=="}
+  Rendered posts/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 158ms (Views: 152.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
